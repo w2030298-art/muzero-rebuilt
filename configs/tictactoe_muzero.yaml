@@ -1,0 +1,18 @@
+# TicTacToe with standard MuZero (two-player zero-sum)
+project:
+  name: tictactoe_muzero
+  seed: 0
+
+environment:
+  type: board_game
+  id: tictactoe
+  max_episode_steps: 9
+
+algorithm:
+  name: muzero
+  num_players: 2
+
+network:
+  type: mlp
+  hidden_size: 128
+  support_size: 10

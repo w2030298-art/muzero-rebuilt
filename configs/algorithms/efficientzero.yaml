@@ -1,0 +1,6 @@
+# EfficientZero algorithm configuration
+algorithm:
+  name: efficientzero
+  use_value_prefix: true
+  use_consistency_loss: true
+  use_reanalyze: false

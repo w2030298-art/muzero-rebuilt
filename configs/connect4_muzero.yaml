@@ -1,0 +1,18 @@
+# Connect4 with standard MuZero (two-player zero-sum)
+project:
+  name: connect4_muzero
+  seed: 0
+
+environment:
+  type: board_game
+  id: connect4
+  max_episode_steps: 42
+
+algorithm:
+  name: muzero
+  num_players: 2
+
+network:
+  type: mlp
+  hidden_size: 128
+  support_size: 10

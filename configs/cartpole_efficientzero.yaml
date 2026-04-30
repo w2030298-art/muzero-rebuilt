@@ -1,0 +1,29 @@
+# CartPole with EfficientZero (value prefix + consistency loss)
+project:
+  name: cartpole_efficientzero
+  seed: 0
+environment:
+  type: gymnasium
+  id: CartPole-v1
+  max_episode_steps: 200
+algorithm:
+  name: efficientzero
+  use_value_prefix: true
+  use_consistency_loss: true
+  use_reanalyze: false
+  num_players: 1
+network:
+  type: mlp
+  hidden_size: 128
+  support_size: 10
+search:
+  num_simulations: 5
+training:
+  max_steps: 10
+  batch_size: 8
+replay:
+  capacity: 100
+execution:
+  backend: local
+  device: cpu
+  inference_batch_size: 4

@@ -1,0 +1,19 @@
+# CPU debug profile — minimal settings for fast smoke tests
+execution:
+  backend: local
+  device: cpu
+  num_self_play_workers: 1
+  num_envs_per_worker: 1
+  inference_batch_size: 4
+
+search:
+  num_simulations: 5
+
+training:
+  batch_size: 8
+  precision: fp32
+  compile_model: false
+  max_steps: 10
+
+replay:
+  capacity: 100

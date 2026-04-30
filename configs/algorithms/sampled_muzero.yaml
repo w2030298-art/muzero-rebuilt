@@ -1,0 +1,6 @@
+# Sampled MuZero algorithm configuration (continuous action spaces)
+algorithm:
+  name: sampled_muzero
+  use_value_prefix: false
+  use_consistency_loss: false
+  use_reanalyze: false

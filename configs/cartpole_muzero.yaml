@@ -1,0 +1,18 @@
+# CartPole-v1 with standard MuZero
+project:
+  name: cartpole_muzero
+  seed: 0
+
+environment:
+  type: gymnasium
+  id: CartPole-v1
+  max_episode_steps: 200
+
+algorithm:
+  name: muzero
+  num_players: 1
+
+network:
+  type: mlp
+  hidden_size: 128
+  support_size: 10

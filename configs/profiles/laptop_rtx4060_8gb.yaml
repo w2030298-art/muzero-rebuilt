@@ -1,0 +1,21 @@
+# RTX 4060 Laptop GPU profile — single GPU, 8GB VRAM
+execution:
+  backend: local
+  device: cuda
+  num_self_play_workers: 2
+  num_envs_per_worker: 1
+  inference_batch_size: 16
+
+search:
+  num_simulations: 25
+
+training:
+  batch_size: 64
+  precision: amp_fp16
+  compile_model: false
+  unroll_steps: 5
+  td_steps: 10
+  gradient_accumulation_steps: 1
+
+replay:
+  capacity: 50000

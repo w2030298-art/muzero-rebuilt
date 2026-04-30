@@ -1,0 +1,25 @@
+# TicTacToe with Gumbel MuZero (low simulation budget)
+project:
+  name: tictactoe_gumbel_muzero
+environment:
+  type: board_game
+  id: tictactoe
+  max_episode_steps: 9
+algorithm:
+  name: gumbel_muzero
+  num_players: 2
+network:
+  type: mlp
+  hidden_size: 128
+search:
+  num_simulations: 8
+  num_sampled_actions: 4
+training:
+  max_steps: 5
+  batch_size: 4
+replay:
+  capacity: 50
+execution:
+  backend: local
+  device: cpu
+  inference_batch_size: 4

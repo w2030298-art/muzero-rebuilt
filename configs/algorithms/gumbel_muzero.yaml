@@ -1,0 +1,6 @@
+# Gumbel MuZero algorithm configuration (low simulation budget)
+algorithm:
+  name: gumbel_muzero
+  use_value_prefix: false
+  use_consistency_loss: false
+  use_reanalyze: false

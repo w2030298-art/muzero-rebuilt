@@ -1,0 +1,6 @@
+# Standard MuZero algorithm configuration
+algorithm:
+  name: muzero
+  use_value_prefix: false
+  use_consistency_loss: false
+  use_reanalyze: false

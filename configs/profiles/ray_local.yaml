@@ -1,0 +1,7 @@
+# Ray local profile — distributed self-play on local machine
+execution:
+  backend: ray
+  device: cpu
+  num_self_play_workers: 2
+  num_envs_per_worker: 1
+  inference_batch_size: 4

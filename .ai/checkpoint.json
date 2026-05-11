@@ -1,0 +1,7 @@
+{
+  "schema_version": "wkstruc-checkpoint/v9",
+  "checkpoint_id": "checkpoint-v0",
+  "created_at": "2026-05-09",
+  "ledger_task_id": "muzero-migration-v0",
+  "notes": "Initial v9 checkpoint. Progress: 40/72 steps, modules 1-9 core complete."
+}

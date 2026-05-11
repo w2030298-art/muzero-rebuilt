@@ -1,0 +1,24 @@
+{
+  "schema_version": "wkstruc-ledger/v9",
+  "task_id": "muzero-migration-v0",
+  "state": "IN_PROGRESS",
+  "progress": {
+    "done": 40,
+    "total": 72,
+    "label": "40 / 72 steps (modules 1-9 core, module 10 partial)"
+  },
+  "last_run": {
+    "at": "2026-04-29",
+    "agent": "workspace-init",
+    "summary": "Modules 1-9 core complete, 100 tests passing. Migrated to v9 structure."
+  },
+  "validation": {
+    "status": "PASS",
+    "commands": ["uv run pytest -q"],
+    "summary": "100 tests passing as of 2026-04-29"
+  },
+  "open_items": [],
+  "checkpoint_id": "checkpoint-v0",
+  "last_review_report": null,
+  "consumed_inbox": []
+}
